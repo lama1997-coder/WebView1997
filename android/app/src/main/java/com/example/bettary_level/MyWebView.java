@@ -42,7 +42,7 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class MainActivity implements PlatformView, MethodCallHandler {
+public class MyWebView implements PlatformView, MethodCallHandler {
     private static WebView webView;
     // private static String CHANNEL = "samples.flutter.dev/battery";
     private static MethodChannel CHANNEL;
@@ -71,7 +71,7 @@ public class MainActivity implements PlatformView, MethodCallHandler {
         return webView;
     }
 
-    MainActivity(Context context, BinaryMessenger messenger, int id) {
+    MyWebView(Context context, BinaryMessenger messenger, int id) {
         // this.context=context;
         // textView = new TextView(context);
 
