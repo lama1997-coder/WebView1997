@@ -82,27 +82,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            // ElevatedButton(
-            //   onPressed: _getBatteryLevel,
-            //   child: const Text('Get Battery Level'),
-            // ),
-            Text(_batteryLevel),
-            SizedBox(
-              height: 100,
-              child: WebView(
-                
-                onWebViewCreated: (controller) {
-                  controller.loadUrl(
-                      'https://advancecapitalpay.com/onboarding.html?source=app');
-                },
-              ),
-            )
-          ],
-        ),
+      child: WebView(
+        onWebViewCreated: (controller) {
+          controller.loadUrl(
+              'https://advancecapitalpay.com/onboarding.html?source=app');
+        },
       ),
     );
   }

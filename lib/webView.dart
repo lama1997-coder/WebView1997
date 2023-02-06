@@ -49,6 +49,6 @@ class WebViewController {
 
   Future<void> loadUrl(String url) async {
     return _channel!.invokeMethod(
-        'loadUrl', <String, dynamic>{"url": url, "context": context});
+        'lunchUrl', <String, dynamic>{"url": url, "context": context});
   }
 }
